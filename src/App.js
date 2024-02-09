@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welocome  to Team!</h1>
+      <HomePage />
     </div>
   );
 }
