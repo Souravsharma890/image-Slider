@@ -9,6 +9,7 @@ import js from "../../Images/js.png";
 import python from "../../Images/python.png";
 import nodejs from "../../Images/node-js.png";
 import '../../CSS/Hero/Hero.css'
+import { parallex } from '../../Function/Hero';
 
 
 
@@ -35,8 +36,10 @@ export default function Hero() {
         };
         // eslint-disable-next-line
     }, []);
+
+    parallex();
     return (
-        <section className='m-3 rounded-3 shadow'>
+        <section className='m-3 rounded-3 shadow ' id='Hero-section'>
             <div className="container  px-4 py-5 d-flex align-items-center justify-content-between">
                 <div className='container'>
                     <h4 className='mb-3 text-warning' >Welcome !</h4>
@@ -53,13 +56,27 @@ export default function Hero() {
                 </div>
                 <div className='container position-relative'>
                     <img src={Lesson} className='' alt="Hero images" />
-                    <img src={C} className='float_image hero_image_1 position-absolute' alt="" />
-                    <img src={C__} className='float_image hero_image_2 position-absolute' alt="" />
-                    <img src={nodejs} className='float_image hero_image_3 position-absolute' alt="" />
-                    <img src={python} className='float_image hero_image_4 position-absolute' alt="" />
-                    <img src={js} className='float_image hero_image_5 position-absolute' alt="" />
-                    <img src={html5} className='float_image hero_image_6 position-absolute' alt="" />
-                    <img src={css3} className='float_image hero_image_7 position-absolute' alt="" />
+                    <div className=' hero_image_1 parallex_img position-absolute'>
+                        <img src={C} className='float_image' alt="" />
+                    </div>
+                    <div className=' hero_image_2  parallex_img position-absolute'>
+                        <img src={C__} className='float_image' alt="" />
+                    </div >
+                    <div className=' hero_image_3  parallex_img position-absolute'>
+                        <img src={nodejs} className='float_image' alt="" />
+                    </div >
+                    <div className=' hero_image_4 parallex_img position-absolute'>
+                        <img src={python} className='float_image' alt="" />
+                    </div >
+                    <div className=' hero_image_5  parallex_img position-absolute'>
+                        <img src={js} className='float_image' alt="" />
+                    </div >
+                    <div className=' hero_image_6  parallex_img position-absolute'>
+                        <img src={html5} className='float_image' alt="" />
+                    </div >
+                    <div className=' hero_image_7  parallex_img position-absolute'>
+                        <img src={css3} className='float_image' alt="" />
+                    </div >
                 </div>
             </div>
         </section>
