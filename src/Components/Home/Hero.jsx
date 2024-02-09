@@ -39,10 +39,12 @@ export default function Hero() {
         <section className='m-3 rounded-3 shadow'>
             <div className="container  px-4 py-5 d-flex align-items-center justify-content-between">
                 <div className='container'>
-                    <h1>Learn Coding in <span className='text-primary'>Web</span ><span className='text-warning'>Dev</span></h1>
-                    <h2>
+                    <h4 className='mb-3 text-warning' >Welcome !</h4>
+                    <h1 className='fw-bold text-primary'>Learn IT Online </h1>
+                    <h1 className='fw-bold mb-5 '> with No Limits </h1>
+                    <h3 className=' text-secondary'>
                         Hello, What Do You Want To Learn?
-                    </h2>
+                    </h3>
                     <span ref={el}></span>
                     <div className='mt-5'>
                         <button className='btn btn-primary  btn-lg me-3'>Learn Document </button>
